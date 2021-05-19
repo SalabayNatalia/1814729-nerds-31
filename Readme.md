@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Наталья Салабай](https://up.htmlacademy.ru/htmlcss/31/user/1814729).
-* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
+* Наставник: [Сергей  Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
