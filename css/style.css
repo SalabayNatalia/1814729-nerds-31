@@ -1,0 +1,271 @@
+:root {
+	--light-grey: #EEEEEE;
+	--grey: #4D4D4D;
+	--dark-grey: #283136;
+	--light-red: #FB565A;
+	--red: #E74246;
+	--dark-red: #D7373B;
+	--light-green: #00CA74;
+	--green: #00BC6C;
+	--dark-green: #00AA62;
+	--light-yellow: #EFC849;
+	--yellow: #EAB534;
+	--dark-yellow: #E5A722;
+	--black: #000000;
+	--background-grey: #888888;
+	--white: #ffffff;
+	--grey-grey: #444444;
+	--grey-ultra: #666666;
+
+}
+
+body {
+	min-width: 1440px;
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	color: var(--black);
+	background-color: var(--white);
+}
+
+.main-header{
+	background-color: var(--light-grey);
+}
+
+.more {
+	text-decoration: none;
+}
+
+.site-navigation {
+	list-style: none;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: var(--black);
+}
+
+.index-columns {
+	background-color: var(--light-grey);
+}
+
+.main-navigation a {
+	color: var(--black)
+}
+
+.main-navigation a:hover {
+	color: var(--light-red)
+}
+
+.main-navigation a:active {
+	color: var(--black);
+}
+
+.suggestions-list {
+	list-style: none;
+}
+
+.basket-link {
+	text-decoration: none;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.button {
+	text-align: center;
+	color: var(--white);
+	text-transform: uppercase;
+	background-color: var(--light-red);
+	vertical-align: middle;
+	border: none;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Roboto;
+	line-height: 18px;
+	font-weight: 500;
+}
+
+.button-app {
+	text-align: center;
+	color: var(--white);
+	text-transform: uppercase;
+	background-color: var(--light-green);
+	vertical-align: middle;
+	border: none;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Roboto;
+	line-height: 18px;
+	font-weight: 500;
+}
+
+.button-presentation {
+	text-align: center;
+	color: var(--white);
+	text-transform: uppercase;
+	background-color: var(--light-yellow);
+	vertical-align: middle;
+	border: none;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Roboto;
+	line-height: 18px;
+	font-weight: 500;
+}
+
+.button:hover {
+	background-color: var(--red);
+}
+
+.button-app:hover {
+	background-color: var(--green);
+}
+
+.button-presentation:hover {
+	background-color: var(--yellow);
+}
+
+.button:active {
+	background-color: var(--dark-redred);
+}
+
+.button-app:active {
+	background-color: var(--dark-greengreen);
+}
+
+.button-presentation:active {
+	background-color: var(--dark-yellowyellow);
+}
+
+.main-header {
+	background-color: var(--light-grey);
+}
+
+.caption {
+	background-color: var(--light-grey);
+	display: none;
+}
+
+.main {
+	background-color: var(--white);
+}
+
+.slogan {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+	color: var(--black);
+}
+
+.text {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	align-items: center;
+	color: var(--dark-grey);
+}
+
+.orders {
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: var(--dark-grey)
+}
+
+.orders-list {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--dark-grey)
+}
+
+.subtittle {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.work {
+	list-style: none;
+}
+
+.list-style-type {
+	list-style-type: ;
+}
+
+.guarantees-item {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 64px;
+	color: var(--black);
+}
+
+.inglish-name {
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	color: var(--black);
+	text-transform: uppercase;
+}
+
+.footer-adress {
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--grey-ultra)
+}
+
+.contact-phone {
+	text-decoration: none;
+	font-family: Roboto;
+	font-size: 16px;
+	line-height:18px;
+	color: var(--grey-ultra)
+}
+
+.footer-social {
+	list-style: none;
+}
+
+.friend{
+	font-family: Roboto;
+	font-size: 36px;
+	line-height: 36px;
+	color: var(--black);
+	font-weight: bold;
+}
+
+.sale {
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--grey-grey);
+}
+
+.subheading {
+	visibility: hidden;
+}
