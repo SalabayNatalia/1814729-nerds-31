@@ -34,7 +34,9 @@
 	--white: #FFFFFF;
 	--grey-grey: #444444;
 	--grey-ultra: #666666;
-
+	--grey-active: #DFDFDF;
+	--grey-hover: #D5D5D5;
+	--grey-one: #DBDBDB
 }
 
 body {
@@ -207,4 +209,54 @@ a {
 
 .subheading {
 	visibility: hidden;
+}
+
+.catalog {
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+	background-color: var(--light-grey);
+}
+
+.filter {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.items {
+	color: var(--dark-grey);
+	line-height: 20px;
+}
+
+.button-grey {
+	background-color: var(--light-grey);
+	color: var(--black)
+}
+
+.button-grey:hover {
+	background-color: var(--grey-hover);
+}
+
+.button-grey:active {
+	background-color: var(--grey-active);
+}
+
+.name {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--black);
+}
+
+.name:hover {
+	color: var(--light-red);
+}
+
+.name-text {
+	color: var(--grey-ultra);
+	line-height: 18px;
+}
+
+.background {
+	background-color: var(--light-grey);
 }
