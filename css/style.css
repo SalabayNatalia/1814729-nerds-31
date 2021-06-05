@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
+  font-weight: 700;
+}
+
+:root {
+	--light-grey: #EEEEEE;
+	--grey: #4D4D4D;
+	--dark-grey: #283136;
+	--light-red: #FB565A;
+	--red: #E74246;
+	--dark-red: #D7373B;
+	--light-green: #00CA74;
+	--green: #00BC6C;
+	--dark-green: #00AA62;
+	--light-yellow: #EFC849;
+	--yellow: #EAB534;
+	--dark-yellow: #E5A722;
+	--black: #000000;
+	--background-grey: #888888;
+	--white: #FFFFFF;
+	--grey-grey: #444444;
+	--grey-ultra: #666666;
+
+}
+
+body {
+	min-width: 1440px;
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: var(--black);
+	background-color: var(--white);
+}
+
+.main-header {
+	background-color: var(--light-grey);
+}
+
+a {
+	text-decoration: none;
+}
+
+.clear-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-navigation {
+	font-weight: 500;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.main-navigation a {
+	color: var(--black)
+}
+
+.main-navigation a:hover {
+	color: var(--light-red)
+}
+
+.main-navigation a:active {
+	color: var(--black);
+}
+
+.caption {
+	display: none;
+}
+
+.slogan {
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+	color: var(--black);
+}
+
+.text {
+	color: var(--dark-grey);
+}
+
+.subtittle {
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.button {
+	color: var(--white);
+	text-transform: uppercase;
+	background-color: var(--light-red);
+	vertical-align: middle;
+	border: none;
+	text-decoration: none;
+	line-height: 18px;
+	font-weight: 500;
+}
+
+.button-green {
+	background-color: var(--light-green);
+}
+
+.button-yellow {
+	background-color: var(--light-yellow);
+}
+
+.button:hover {
+	background-color: var(--red);
+}
+
+.button-green:hover {
+	background-color: var(--green);
+}
+
+.button-yellow:hover {
+	background-color: var(--yellow);
+}
+
+.button:active {
+	background-color: var(--dark-redred);
+}
+
+.button-green:active {
+	background-color: var(--dark-green);
+}
+
+.button-yellow:active {
+	background-color: var(--dark-yellow);
+}
+
+.desc {
+	font-weight: 500;
+	font-size: 45px;	
+	line-height: 45px;
+}
+
+.orders {
+	text-transform: uppercase;
+	color: var(--dark-grey);
+	font-weight: 700;
+}
+
+.orders-list {
+	color: var(--dark-grey);
+}
+
+.guarantees-slogan {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.guarantees-item {
+	font-size: 45px;
+	line-height: 64px;
+	color: var(--black);
+	font-weight: 700;
+}
+
+.inglish-name {
+	font-size: 18px;
+	line-height: 30px;
+	color: var(--black);
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.footer-adress {
+	line-height: 18px;
+	color: var(--grey-ultra);
+}
+
+.contact-phone {
+	text-decoration: none;
+	line-height: 18px;
+	color: var(--grey-ultra);
+}
+
+.friend {
+	font-size: 36px;
+	line-height: 36px;
+	color: var(--black);
+	font-weight: 700;
+}
+
+.sale {
+	line-height: 22px;
+	color: var(--grey-grey);
+}
+
+.subheading {
+	visibility: hidden;
+}
