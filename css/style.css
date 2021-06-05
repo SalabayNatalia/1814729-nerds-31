@@ -57,12 +57,17 @@ a {
 	text-decoration: none;
 }
 
-.site-navigation {
+.clear-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-navigation {
 	list-style: none;
 	font-weight: 500;
 	line-height: 30px;
 	text-transform: uppercase;
-	color: var(--black);
 }
 
 .main-navigation a {
@@ -77,88 +82,8 @@ a {
 	color: var(--black);
 }
 
-.suggestions-list {
-	list-style: none;
-}
-
-.basket-link {
-	text-decoration: none;
-	font-weight: 500;
-	line-height: 30px;
-	text-transform: uppercase;
-}
-
-.button {
-	color: var(--white);
-	text-transform: uppercase;
-	background-color: var(--light-red);
-	vertical-align: middle;
-	border: none;
-	text-decoration: none;
-	font-family: Roboto;
-	line-height: 18px;
-	font-weight: 500;
-}
-
-.button-app {
-	color: var(--white);
-	text-transform: uppercase;
-	background-color: var(--light-green);
-	vertical-align: middle;
-	border: none;
-	text-decoration: none;
-	font-family: Roboto;
-	line-height: 18px;
-	font-weight: 500;
-}
-
-.button-presentation {
-	color: var(--white);
-	text-transform: uppercase;
-	background-color: var(--light-yellow);
-	vertical-align: middle;
-	border: none;
-	text-decoration: none;
-	font-family: Roboto;
-	line-height: 18px;
-	font-weight: 500;
-}
-
-.button:hover {
-	background-color: var(--red);
-}
-
-.button-app:hover {
-	background-color: var(--green);
-}
-
-.button-presentation:hover {
-	background-color: var(--yellow);
-}
-
-.button:active {
-	background-color: var(--dark-redred);
-}
-
-.button-app:active {
-	background-color: var(--dark-greengreen);
-}
-
-.button-presentation:active {
-	background-color: var(--dark-yellowyellow);
-}
-
-.main-header {
-	background-color: var(--light-grey);
-}
-
 .caption {
-	background-color: var(--light-grey);
 	display: none;
-}
-
-.main {
-	background-color: var(--white);
 }
 
 .slogan {
@@ -173,8 +98,50 @@ a {
 	color: var(--dark-grey);
 }
 
+.button {
+	color: var(--white);
+	text-transform: uppercase;
+	background-color: var(--light-red);
+	vertical-align: middle;
+	border: none;
+	text-decoration: none;
+	line-height: 18px;
+	font-weight: 500;
+}
+
+.button-green {
+	background-color: var(--light-green);
+}
+
+.button-yellow {
+	background-color: var(--light-yellow);
+}
+
+.button:hover {
+	background-color: var(--red);
+}
+
+.button-green:hover {
+	background-color: var(--green);
+}
+
+.button-yellow:hover {
+	background-color: var(--yellow);
+}
+
+.button:active {
+	background-color: var(--dark-redred);
+}
+
+.button-green:active {
+	background-color: var(--dark-green);
+}
+
+.button-yellow:active {
+	background-color: var(--dark-yellow);
+}
+
 .orders {
-	font-weight: bold;
 	text-transform: uppercase;
 	color: var(--dark-grey);
 }
@@ -185,8 +152,6 @@ a {
 }
 
 .subtittle {
-	font-family: Roboto;
-	font-weight: bold;
 	font-size: 24px;
 	line-height: 30px;
 	text-transform: uppercase;
@@ -196,21 +161,13 @@ a {
 	text-transform: uppercase;
 }
 
-.work {
-	list-style: none;
-}
-
 .guarantees-item {
-	font-family: Roboto;
-	font-weight: bold;
 	font-size: 45px;
 	line-height: 64px;
 	color: var(--black);
 }
 
 .inglish-name {
-	font-family: Roboto;
-	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
 	color: var(--black);
@@ -218,14 +175,12 @@ a {
 }
 
 .footer-adress {
-	font-family: Roboto;
 	line-height: 18px;
 	color: var(--grey-ultra);
 }
 
 .contact-phone {
 	text-decoration: none;
-	font-family: Roboto;
 	line-height: 18px;
 	color: var(--grey-ultra);
 }
@@ -235,15 +190,12 @@ a {
 }
 
 .friend {
-	font-family: Roboto;
 	font-size: 36px;
 	line-height: 36px;
 	color: var(--black);
-	font-weight: bold;
 }
 
 .sale {
-	font-family: Roboto;
 	line-height: 22px;
 	color: var(--grey-grey);
 }
