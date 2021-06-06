@@ -224,7 +224,7 @@ a {
 	line-height: 30px;
 }
 
-.items {
+.filter-list {
 	color: var(--dark-grey);
 	line-height: 20px;
 }
@@ -242,21 +242,21 @@ a {
 	background-color: var(--grey-active);
 }
 
-.name {
+.sample-sites {
 	font-weight: 700;
 	text-transform: uppercase;
 	color: var(--black);
 }
 
-.name:hover {
+.sample-sites:hover {
 	color: var(--light-red);
 }
 
-.name-text {
+.sample-sites-text {
 	color: var(--grey-ultra);
 	line-height: 18px;
 }
 
-.background {
+.price-card-background {
 	background-color: var(--light-grey);
 }
