@@ -10,26 +10,41 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-		<header class="main-header">
-      <nav class="main-navigation">
-    		<a href="index.html">
-					<img src="img/nerds-logo.svg" width="159,87" height="48,75" alt="логотип студии nёrds">
-				</a>
-        <ul class="clear-list">
+  <body class="page-body">
+    <header class="main-header header-catalog">
+			<div class="container container-catalog">
+			<nav class="main-navigation">
+				<div class="main-navigation-wrapper">
+					<a class="main-header-logo">
+						<img src="img/nerds-logo.svg" width="159,87" height="48,75" alt="логотип студии nёrds">
+					</a>
+					<ul class="clear-list site-navigation">
           <li><a href="index.html">студия</a></li>
           <li><a href="#">клиенты</a></li>
           <li><a>магазин</a></li>
           <li><a href="#">контакты</a></li>
         </ul>
-        <a href="#">корзина</a>
+        <a class="basket-link" href="#">корзина</a>
+      </div>
       </nav>
+      <h1 class="catalog">Магазин готовых шаблонов</h1>
+      </div>
     </header>
     <main>
-      <h1 class="catalog">Магазин готовых шаблонов</h1>
-      <section>
+    <div class="container">
+      <div class="page-catalog">
+      <section class="page-catalog-filter">
         <h2 class="subheading">Фильтр</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend class="filter">Стоимость:</legend>
+            <p>
+              <label for="low-price">от</label>
+              <input id="low-price" type="text" name="price" placeholder="0">
+              <label for="high-price">до</label>
+              <input id="high-price" type="text" name="price" placeholder="15000">
+            </p>
+          </fieldset>
           <fieldset>
             <legend class="filter">Сетка:</legend>
             <ul class="clear-list filter-list">
@@ -74,7 +89,7 @@
           <button class="button button-grey" type="submit">Показать</button>
         </form>
       </section>
-      <section>
+      <section class="products">
         <h2 class="subheading">Каталог</h2>
         <ul class="clear-list">
           <li>
@@ -143,32 +158,40 @@
           </li>
         </ul>
       </section>
+      </div>
+    </div>
     </main>
-    <footer>
-      <section>
-        <h2 class="subheading">контакты</h2>
-        <img src="img/map.png" width="1440" height="416"alt="карта">
-        <img src="img/map-marker.png" width="231" height="190" alt="маркер карты">
-        <h3 class="inglish-name">nёrds design studio</h3>
-        <p class="footer-adress">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</p>
-        <a class="contact-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-        <a class="button button-contact" href="#">напишите нам</a>
-      </section>
-      <section>
-        <h2 class="friend">Давайте дружить, это выгодно!</h2>
-        <p class="sale">Скидки 10% для друзей из социальных сетей.</p>
-        <ul class="footer-social clear-list">
-      		<li>
-        		<a href="#"><img src="img/vkontakte_icon.svg">Вконтакте</a>
-      		</li>
-      		<li>
-        		<a href="#"><img src="img/facebook_icon.svg">Facebook</a>
-      		</li>
-				  <li>
-  					<a href="#"><img src="img/instagram_icon.svg">Instagram</a>
-				  </li>
-    		</ul>
-      </section>
-    </footer>
+    <footer class="main-footer">
+			<div class="container">
+				<section class="contacts">
+					<h2 class="subheading">контакты</h2>
+					<img src="img/map.png" width="1160" height="416"alt="карта">
+					<img src="img/map-marker.png" width="231" height="190" alt="маркер карты">
+					<h3 class="inglish-name">nёrds design studio</h3>
+					<p class="footer-adress">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</p>
+					<a class="contact-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+					<a class="button button-contact" href="#">напишите нам</a>
+				</section>
+				<section>
+					<div class="container-footer">
+						<div class="friend-sale">
+							<h2 class="friend">Давайте дружить, это выгодно!</h2>
+							<p class="sale">Скидки 10% для друзей из социальных сетей.</p>
+						</div>
+						<ul class="footer-social clear-list">
+							<li>
+								<a class="social-button" href="#"><img src="img/vkontakte_icon.svg">Вконтакте</a>
+							</li>
+							<li>
+								<a class="social-button" href="#"><img src="img/facebook_icon.svg">Facebook</a>
+							</li>
+							<li>
+								<a class="social-button" href="#"><img src="img/instagram_icon.svg">Instagram</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</footer>
   </body>
 </html>
