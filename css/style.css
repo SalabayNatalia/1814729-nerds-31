@@ -211,7 +211,7 @@ a {
 }
 
 .button:active {
-	background-color: var(--dark-redred);
+	background-color: var(--dark-red);
 }
 
 .button-green:active {
@@ -354,14 +354,13 @@ a {
 
 .catalog {
 	margin: 0;
-	justify-self: center;
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
 }
 
 .container-catalog {
-	height: 355px;
+	padding-bottom: 180px;
 }
 
 .header-catalog {
@@ -370,17 +369,22 @@ a {
 
 .page-catalog {
 	display: grid;
-	grid-template-columns: 260px 1fr;
+	grid-template-columns: 260px min-content 1fr min-content;
+	grid-template-rows: min-content 1fr min-content;
+	column-gap: 140px;
 }
 
 .page-catalog-filter {
-	margin-right: 140px;
+	outline: 5px solid var(--yellow);
+	grid-row-start: 1;
+	grid-row-end: 4;
 }
 
 .filter {
 	text-transform: uppercase;
 	font-weight: 700;
 	line-height: 30px;
+	font-size: 18px;
 }
 
 .filter-list {
@@ -402,6 +406,49 @@ a {
 	background-color: var(--grey-active);
 }
 
+.page-catalog .sorting-sites {
+	text-transform: uppercase;
+	line-height: 18px;
+	outline: 5px solid var(--light-yellow);
+	grid-column-start: 2;
+	grid-column-end: -1;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	margin-bottom: 48px;
+}
+
+.sorting {
+	color: var(--black);
+	opacity: 0.3;
+	font-size: 14px;
+}
+
+.sorting:hover {
+	opacity: 0.6;
+}
+
+.sorting:active {
+	color: var(--black);
+	opacity: 1;
+	/*не понимаю, почему красный цвет при нажатии((*/
+}
+
+.product-cards {
+	outline: 5px solid var(--dark-green);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 41px;
+	row-gap: 25px;
+}
+
+.products {
+	grid-column-start: 2;
+	grid-column-end: -1;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	margin-bottom: 55px;
+}
+
 .sample-sites {
 	font-weight: 700;
 	text-transform: uppercase;
@@ -419,4 +466,18 @@ a {
 
 .price-card-background {
 	background-color: var(--light-grey);
+}
+
+.pages {
+	outline: 5px solid var(--grey-ultra);
+	grid-row-start: 3;
+	grid-row-end: -1;
+	grid-column-start: 2;
+	grid-column-end: -1;
+	margin-bottom: 60px;
+}
+
+.main-footer-catalog {
+	outline: 5px solid var(--dark-green);
+	outline-offset: -5px;
 }
