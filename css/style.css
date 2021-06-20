@@ -44,7 +44,7 @@
 }
 
 .page-body {
-	min-width: 1200px;	
+	min-width: 1200px;
 	margin: 0;
 	padding: 0;
 	font-family: Roboto, Arial, sans-serif;
@@ -68,6 +68,7 @@
 	background-color: var(--light-grey);
 	outline: 5px solid var(--dark-green);
 	outline-offset: -5px;
+	margin-bottom: 80px;
 }
 
 a {
@@ -116,6 +117,8 @@ a {
 .main-header-logo {
 	outline: 5px solid var(--red);
 	outline-offset: -5px;
+	width: 160px;
+	height: 49px;
 }
 
 .main-header-logo:hover {
@@ -129,6 +132,9 @@ a {
 .site-navigation {
 	outline: 5px solid var(--light-yellow);
 	outline-offset: -5px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 9px;
 }
 
 .caption {
@@ -146,6 +152,10 @@ a {
 	color: var(--dark-grey);
 }
 
+.text-slogan {
+	padding-bottom: 38px;
+}
+
 .suggestions {
 	outline: 5px solid var(--dark-grey);
 	width: 1100px;
@@ -161,6 +171,10 @@ a {
 .suggestions-item {
 	outline: 5px solid var(--grey-ultra);
 	outline-offset: -5px;
+}
+
+.suggestions-text{
+	padding-bottom: 32px;
 }
 
 .subtittle {
@@ -239,7 +253,7 @@ a {
 
 .desc {
 	font-weight: 500;
-	font-size: 45px;	
+	font-size: 45px;
 	line-height: 45px;
 }
 
@@ -264,11 +278,28 @@ a {
 	font-weight: 700;
 }
 
+.guarantees-list {
+	display: flex;
+	justify-content: space-between;
+}
+
 .guarantees-item {
 	font-size: 45px;
 	line-height: 64px;
 	color: var(--black);
 	font-weight: 700;
+}
+
+.percent {
+	font-size: 26px;
+	line-height: 40px;
+}
+
+.guarantees-text {
+	color: var(--dark-grey);
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
 }
 
 .clients {
@@ -346,6 +377,8 @@ a {
 .footer-social {
 	outline: 5px solid var(--light-red);
 	width: 245px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .subheading {
