@@ -119,6 +119,8 @@ a {
 	outline-offset: -5px;
 	width: 160px;
 	height: 49px;
+	padding-top: 66px;
+	padding-bottom: 78px;
 }
 
 .main-header-logo:hover {
@@ -134,7 +136,33 @@ a {
 	outline-offset: -5px;
 	display: flex;
 	justify-content: space-around;
-	margin-bottom: 9px;
+	flex-wrap: wrap;
+}
+
+.site-navigation a,
+.basket-navigation a {
+	display: block;
+	padding: 75px 23px 9px 22px;
+}
+
+.basket-navigation {
+	outline: 5px solid var(--light-red);
+	position: relative;
+}
+
+.basket-navigation .basket-link {
+	padding-left: 50px;
+	position: relative;
+}
+
+.basket-link::before {
+  content: "";
+  width: 16px;
+  height: 18px;
+	position: absolute;
+  background-image: url("img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .caption {
@@ -390,6 +418,7 @@ a {
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
+	text-align: center;
 }
 
 .container-catalog {
@@ -448,6 +477,16 @@ a {
 	grid-row-start: 1;
 	grid-row-end: 2;
 	margin-bottom: 48px;
+}
+
+.sorting-sites {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.sorting-list {
+	display: flex;
+	justify-content: space-around;
 }
 
 .sorting {
@@ -509,6 +548,31 @@ a {
 	grid-column-end: -1;
 	margin-bottom: 60px;
 }
+
+.pages-numbers {
+	display: flex;
+	justify-content: flex-start;
+	
+}
+
+.button-pages-numbers {
+	color: var(--black);
+	text-transform: uppercase;
+	background-color: var(--light-grey);
+	vertical-align: middle;
+	border: none;
+	text-decoration: none;
+	line-height: 18px;
+	font-weight: 500;
+	padding: 17px 20px 15px 20px;
+	margin-right: 11px;
+}
+
+.button-page-next {
+	padding: 17px 77px 15px 78px;
+	margin-right: 0;
+}
+
 
 .main-footer-catalog {
 	outline: 5px solid var(--dark-green);
