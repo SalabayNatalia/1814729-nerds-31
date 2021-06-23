@@ -21,10 +21,12 @@
 						<ul class="clear-list site-navigation">
           		<li><a href="index.html">студия</a></li>
           		<li><a href="#">клиенты</a></li>
-          		<li><a>магазин</a></li>
+          		<li><a class="catalog-here">магазин</a></li>
           		<li><a href="#">контакты</a></li>
         		</ul>
-        		<a class="basket-link" href="#">корзина</a>
+						<div class="basket-navigation">
+							<a class="basket-link" href="#">корзина</a>
+						</div>
       		</div>
      	 	</nav>
       	<h1 class="catalog">Магазин готовых шаблонов</h1>
@@ -34,7 +36,7 @@
 			<div class="container">
 				<div class="page-catalog">
 					<section class="page-catalog-filter">
-						<h2 class="subheading">Фильтр</h2>
+						<h2 class="visually-hidden">Фильтр</h2>
 						<form method="get" action="https://echo.htmlacademy.ru">
 							<fieldset>
 								<legend class="filter">Стоимость:</legend>
@@ -90,8 +92,8 @@
 						</form>
 					</section>
 					<section class="sorting-sites">
-						<h2 class="filter">сортировать:</h2>
-						<ul class="clear-list">
+						<h2 class="filter filter-sorting">сортировать:</h2>
+						<ul class="clear-list sorting-list">
 							<li class="sorting">
 								<a href="#">по цене</a>
 							</li>
@@ -114,11 +116,11 @@
 								<img src="img/sedona.jpg" width="359" height="578" alt="Sedona-информационный сайт для туристов">
 							</li>
 							<li>
-								<h3>
+								<div class="price-card-background">
 									<a class="sample-sites" href="#">pink app</a>
-								</h3>
 								<p class="sample-sites-text">Продуктовый лендинг приложения для IOS и Android</p>
 								<p><button class="button button-price" type="button">9 900 <span>&#8381;</span></button></p>
+							</div>
 								<img src="img/pink.jpg" width="358" height="578" alt="Pink app-продуктовый лендинг приложения для IOS и Android">
 							</li>
 							<li>
@@ -156,18 +158,18 @@
 						</ul>
 					</section>
 					<section class="pages">
-						<ul class="clear-list">
+						<ul class="clear-list pages-numbers">
 							<li>
-								<a>1</a>
+								<a class="button-pages-numbers">1</a>
 							</li>
 							<li>
-								<a class="button button-grey" href="#">2</a>
+								<a class="button button-grey button-pages-numbers" href="#">2</a>
 							</li>
 							<li>
-								<a class="button button-grey"href="#">3</a>
+								<a class="button button-grey button-pages-numbers"href="#">3</a>
 							</li>
 							<li>
-								<a class="button button-grey"href="#">следующая</a>
+								<a class="button button-grey button-page-next"href="#">следующая</a>
 							</li>
 						</ul>
 					</section>
@@ -177,7 +179,7 @@
 		<footer class="main-footer-catalog">
 			<div class="container">
 				<section class="contacts">
-					<h2 class="subheading">контакты</h2>
+					<h2 class="visually-hidden">контакты</h2>
 					<img src="img/map.png" width="1160" height="416"alt="карта">
 					<img src="img/map-marker.png" width="231" height="190" alt="маркер карты">
 					<h3 class="inglish-name">nёrds design studio</h3>
