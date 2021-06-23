@@ -69,6 +69,7 @@
 	outline: 5px solid var(--dark-green);
 	outline-offset: -5px;
 	margin-bottom: 80px;
+	padding-top: 50px;
 }
 
 a {
@@ -79,6 +80,19 @@ a {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -108,8 +122,9 @@ a {
 }
 
 .main-navigation-wrapper {
+	outline: 5px solid var(--dark-yellow);
 	display: grid;
-	grid-template-columns: 300px 1fr min-content;
+	grid-template-columns: 160px 1fr min-content;
 	width: 1160px;
 	padding: 0 20px;
 }
@@ -119,8 +134,6 @@ a {
 	outline-offset: -5px;
 	width: 160px;
 	height: 49px;
-	padding-top: 66px;
-	padding-bottom: 78px;
 }
 
 .main-header-logo:hover {
@@ -135,14 +148,16 @@ a {
 	outline: 5px solid var(--light-yellow);
 	outline-offset: -5px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
+	width: 437px;
+	margin-left: 202px;
+	padding-top: 20px;
 }
 
 .site-navigation a,
 .basket-navigation a {
 	display: block;
-	padding: 75px 23px 9px 22px;
 }
 
 .basket-navigation {
@@ -153,16 +168,19 @@ a {
 .basket-navigation .basket-link {
 	padding-left: 50px;
 	position: relative;
+	padding-top: 20px;
 }
 
 .basket-link::before {
   content: "";
-  width: 16px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
 	position: absolute;
-  background-image: url("img/basket.svg");
+  background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+	top: 29px;
+	left: 7px;
 }
 
 .caption {
@@ -409,16 +427,13 @@ a {
 	justify-content: space-between;
 }
 
-.subheading {
-	visibility: hidden;
-}
-
 .catalog {
 	margin: 0;
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
 	text-align: center;
+	margin-top: 72px;
 }
 
 .container-catalog {
@@ -427,6 +442,10 @@ a {
 
 .header-catalog {
 	margin-bottom: 55px;
+}
+
+.catalog-here {
+	border-bottom: 2px solid var(--light-red);
 }
 
 .page-catalog {
@@ -484,9 +503,14 @@ a {
 	grid-template-columns: 1fr 1fr;
 }
 
+.filter-sorting {
+	margin: 0;
+}
+
 .sorting-list {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 }
 
 .sorting {
