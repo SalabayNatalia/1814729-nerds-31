@@ -38,6 +38,7 @@
 	--grey-hover: #D5D5D5;
 	--grey-one: #DBDBDB;
 	--background-social-grey: #E1E1E1;
+	--button-slide-grey: #C1C1C1
 }
 
 .page {
@@ -62,8 +63,6 @@
 
 .main-header {
 	background-color: var(--light-grey);
-	outline: 5px solid var(--dark-green);
-	/* outline-offset: -5px; */
 	margin-bottom: 80px;
 }
 
@@ -117,7 +116,6 @@ a {
 }
 
 .main-navigation-wrapper {
-	outline: 5px solid var(--dark-yellow);
 	display: grid;
 	grid-template-columns: 160px 1fr min-content;
 	width: 1160px;
@@ -127,8 +125,6 @@ a {
 }
 
 .main-header-logo {
-	outline: 5px solid var(--red);
-	outline-offset: -5px;
 	width: 160px;
 	height: 65px;
 }
@@ -142,8 +138,6 @@ a {
 }
 
 .site-navigation {
-	outline: 5px solid var(--light-yellow);
-	outline-offset: -5px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -155,21 +149,17 @@ a {
 .basket-navigation a {
 	display: block;
 	padding-bottom: 20px;
-	padding-top: 20px;
+	padding-top: 26px;
 }
 
 .studio-here {
 	border-bottom: 2px solid var(--light-red);
 }
 
-.basket-navigation {
-	outline: 5px solid var(--light-red);
-}
-
 .basket-navigation .basket-link {
 	padding-left: 50px;
 	position: relative;
-	padding-top: 20px;
+	padding-top: 26px;
 }
 
 .basket-link::before {
@@ -180,12 +170,14 @@ a {
   background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-	top: 29px;
-	left: 7px;
+	top: 33px;
+	left: 8px;
 }
 
 .slider {
 	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .slider-list {
@@ -199,8 +191,8 @@ a {
 	height: 431px;
 	background-image: url(../img/slide-three-phones.png);
 	background-repeat: no-repeat;
-	right: 0;
-	top: 0;
+	right: 5px;
+	bottom: 0;
 }
 
 .slogan {
@@ -209,8 +201,8 @@ a {
 	line-height: 55px;
 	color: var(--black);
 	margin: 0;
-	margin-bottom: 25px;
-	padding-top: 78px; 
+	margin-bottom: 27px;
+	padding-top: 65px; 
 }
 
 .text {
@@ -220,7 +212,7 @@ a {
 .text-slogan {
 	padding: 0;
 	margin: 0;
-	padding-bottom: 38px;
+	margin-bottom: 38px;
 }
 
 .slide-button {
@@ -233,7 +225,7 @@ a {
 	position: absolute;
 	width: 760px;
 	height: 431px;
-	right: 0;
+	right: 5px;
 	bottom: 0;
 	background: url(../img/slide-two-screens.png);
 	background-repeat: no-repeat;
@@ -244,7 +236,7 @@ a {
 	position: absolute;
 	width: 760px;
 	height: 431px;
-	right: 0;
+	right: 5px;
 	bottom: 0;
 	background: url(../img/slide-tablet-phone.png);
 	background-repeat: no-repeat;
@@ -256,8 +248,9 @@ a {
 	justify-content: space-between;
 	width: 88px;
 	z-index: 5;
-	top: 317px;
-	right: 536px;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 96px;
 }
 
 .slider-controls-button {
@@ -272,9 +265,7 @@ a {
 
 .current {
 	background-color: var(--white);
-	background-image: url(../img/slider-button.svg);
-	background-repeat: no-repeat;
-	background-position: center;
+	box-shadow: inset 0 0 0 5px var(--white), inset 0 0 0 7px var(--button-slide-grey);
 }
 
 .slide {
@@ -286,33 +277,26 @@ a {
 }
 
 .suggestions {
-	outline: 5px solid var(--dark-grey);
 	width: 1100px;
+	border-bottom: 2px solid var(--light-grey);
+	padding-left: 20px;
+	margin-bottom: 39px;
+	padding-bottom: 80px;
+}
+
+.suggestions-item img {
+	margin-bottom: 20px;
 }
 
 .suggestions-list {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 100px;
-	margin-bottom: 80px;
 	}
 
-.suggestions-item {
-	outline: 5px solid var(--grey-ultra);
-	outline-offset: -5px;
-}
-
 .suggestions-text{
-	padding-bottom: 32px;
-}
-
-hr {
-	margin-bottom: 39px;
-	color: var(--light-grey);
-	height: 2px;
-	background-color: var(--light-grey);
-	border: none;
-	width: 1158px;
+	margin: 0;
+	margin-bottom: 32px;
 }
 
 .subtittle {
@@ -320,6 +304,8 @@ hr {
 	line-height: 30px;
 	text-transform: uppercase;
 	font-weight: 700;
+	margin: 0;
+	margin-bottom: 16px;
 }
 
 .button {
@@ -332,14 +318,11 @@ hr {
 	line-height: 18px;
 	font-weight: 500;
 	padding: 17px 40px 15px 39px;
+	display: inline-block;
 }
 
 .button-info {
 	padding: 17px 54px 15px 54px;
-}
-
-.button-contact {
-	padding: 17px 44px 15px 44px;
 }
 
 .button-green {
@@ -382,40 +365,53 @@ hr {
 
 .index-columns {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	outline: 5px solid var(--dark-green);
+	grid-template-columns: 2fr min-content;
 	width: 1174px;
+	padding-left: 20px;
 }
 
 .features {
-	outline: 5px solid var(--dark-yellow);
+	margin-right: 50px;
 }
 
 .desc {
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
+	margin: 0;
+	margin-bottom: 32px;
+	padding-top: 35px;
+}
+
+.features-text {
+	margin: 0;
+	margin-bottom: 41px;
 }
 
 .orders {
 	text-transform: uppercase;
 	color: var(--dark-grey);
 	font-weight: 700;
+	margin: 0;
 	margin-right: 149px;
+	margin-bottom: 23px;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .orders-list {
 	color: var(--dark-grey);
 	position: relative;
+	margin-bottom: 73px;
 }
 
 .orders-item {
-padding-left: 32px;
-position: relative;
+	padding-left: 36px;
+	position: relative;
 }
 
 .orders-item:not(:last-child) {
-	margin-bottom: 20px;
+	padding-bottom: 24px;
 }
 
 .orders-item::before {
@@ -429,18 +425,22 @@ position: relative;
 }
 
 .guarantees {
-	outline: 5px solid var(--yellow);
 	justify-self: end;
+	padding-right: 15px;
 }
 
 .guarantees-slogan {
 	text-transform: uppercase;
 	font-weight: 700;
+	margin: 0;
+	margin-top: 31px;
+	margin-bottom: 30px;
+	padding-left: 18px;
 }
 
 .guarantees-list {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .guarantees-item {
@@ -448,6 +448,9 @@ position: relative;
 	line-height: 64px;
 	color: var(--black);
 	font-weight: 700;
+	margin: 0;
+	padding-bottom:11px;
+
 }
 
 .percent {
@@ -460,19 +463,26 @@ position: relative;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 400;
+	margin: 0;
 }
 
 .clients {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
 	border-top: 2px solid var(--light-grey);
 	border-bottom: 2px solid var(--light-grey);
-	padding-top: 46px;
-	padding-bottom: 44px;
+	padding-top: 48px;
+	padding-bottom: 37px;
 }
 
 .client-logo {
 	opacity: 0.2;
+}
+
+.client-logo:not(:last-child) {
+	border-right: 2px solid var(--light-grey);
 }
 
 .client-logo:hover {
@@ -484,20 +494,25 @@ position: relative;
 }
 
 .main-footer {
-	outline: 5px solid var(--dark-red);
-	outline-offset: -5px;
 	margin-top: 80px;
-	padding: 68px 0;
 }
 
 .position {
 	position: relative;
 }
 
-.map-marker img{
+.map {
+	width: 100%;
+	max-width: 100%;
 	position: absolute;
+	border: none;
+}
+
+.map-marker {
+	position: absolute;
+	left: 50%;
+	transform: translateX(127px);
 	top: 70px;
-	left: 847px;
 	width: 231px;
 	height: 190px;
 }
@@ -505,12 +520,11 @@ position: relative;
 .adress-phone {
   background-color: var(--white);
   box-sizing: border-box;
-  width: 319px;
-  min-height: 308px;
   padding: 49px 50px 47px 50px;
-  justify-self: start;
   position: absolute;
 	top: 54px;
+	left: 50%;
+	transform: translateX(-580px);
 }
 
 .inglish-name {
@@ -520,18 +534,19 @@ position: relative;
 	text-transform: uppercase;
 	font-weight: 700;
 	margin-top: 0;
-}
-
-.contacts {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 37px;
-	justify-content: space-between;
+	margin-bottom: 23px;
 }
 
 .footer-adress {
 	line-height: 18px;
 	color: var(--grey-ultra);
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.phone {
+	margin: 0;
+	margin-bottom: 35px;
 }
 
 .contact-phone {
@@ -540,10 +555,13 @@ position: relative;
 	color: var(--grey-ultra);
 }
 
+.button-contact {
+	padding: 17px 44px 15px 44px;
+}
+
 .container-footer {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	outline: 5px solid var(--black);
 }
 
 .friend {
@@ -559,13 +577,11 @@ position: relative;
 }
 
 .friend-sale {
-	outline: 5px solid var(--light-green);
 	order: 2;
 	width: 660px;
 }
 
 .footer-social {
-	outline: 5px solid var(--light-red);
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -695,9 +711,7 @@ position: relative;
 }
 
 .sorting:active {
-	color: var(--black);
 	opacity: 1;
-	/*не понимаю, почему красный цвет при нажатии(*/
 }
 
 .product-cards {
