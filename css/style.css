@@ -457,7 +457,7 @@ a {
 .clients {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	border-top: 2px solid var(--light-grey);
 	border-bottom: 2px solid var(--light-grey);
@@ -478,20 +478,29 @@ a {
 }
 
 .logo-html::after {
-	right: -48px;
+	right: -50px;
+}
+
+.logo-html {
+	margin-left: 52px;
+	margin-right: 95px;
 }
 
 .logo-borodinski::after {
-	right: -44px;
+	right: -46px;
 	top: 15px;
 }
 
 .logo-borodinski {
-	margin-left: 45px;
+	margin-right: 104px;
 }
 
 .logo-pink::after {
-	right: -55px;
+	right: -57px;
+}
+
+.logo-pink {
+	margin-right: 120px;
 }
 
 .logo {
