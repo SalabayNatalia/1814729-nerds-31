@@ -148,12 +148,8 @@ a {
 .site-navigation a,
 .basket-navigation a {
 	display: block;
-	padding-bottom: 20px;
+	padding-bottom: 13px;
 	padding-top: 26px;
-}
-
-.studio-here {
-	border-bottom: 2px solid var(--light-red);
 }
 
 .basket-navigation .basket-link {
@@ -185,14 +181,25 @@ a {
 }
 
 .slide-three-phones::after {
+	background-image: url(../img/slide-three-phones.png);
+}
+
+.slide::after {
 	content: "";
 	position: absolute;
 	width: 760px;
 	height: 431px;
-	background-image: url(../img/slide-three-phones.png);
-	background-repeat: no-repeat;
-	right: 5px;
+	right: 4px;
 	bottom: 0;
+	background-repeat: no-repeat;
+}
+
+.slide-two-screens::after {
+	background: url(../img/slide-two-screens.png);
+}
+
+.slide-tablet-phone::after {
+	background: url(../img/slide-tablet-phone.png);
 }
 
 .slogan {
@@ -202,7 +209,7 @@ a {
 	color: var(--black);
 	margin: 0;
 	margin-bottom: 27px;
-	padding-top: 65px; 
+	padding-top: 74px; 
 }
 
 .text {
@@ -218,28 +225,6 @@ a {
 .slide-button {
 	display: inline-block;
 	margin-bottom: 80px;
-}
-
-.slide-two-screens::after {
-	content: "";
-	position: absolute;
-	width: 760px;
-	height: 431px;
-	right: 5px;
-	bottom: 0;
-	background: url(../img/slide-two-screens.png);
-	background-repeat: no-repeat;
-}
-
-.slide-tablet-phone::after {
-	content: "";
-	position: absolute;
-	width: 760px;
-	height: 431px;
-	right: 5px;
-	bottom: 0;
-	background: url(../img/slide-tablet-phone.png);
-	background-repeat: no-repeat;
 }
 
 .slider-controls {
@@ -274,6 +259,10 @@ a {
 
 .slide-current {
 	display: block;
+}
+
+.main {
+	margin-bottom: 80px;
 }
 
 .suggestions {
@@ -450,7 +439,6 @@ a {
 	font-weight: 700;
 	margin: 0;
 	padding-bottom:11px;
-
 }
 
 .percent {
@@ -481,10 +469,6 @@ a {
 	opacity: 0.2;
 }
 
-.client-logo:not(:last-child) {
-	border-right: 2px solid var(--light-grey);
-}
-
 .client-logo:hover {
 	opacity: 1;
 }
@@ -493,19 +477,47 @@ a {
 	opacity:  0.1;
 }
 
-.main-footer {
-	margin-top: 80px;
+.logo-html::after {
+	right: -48px;
+}
+
+.logo-borodinski::after {
+	right: -44px;
+	top: 15px;
+}
+
+.logo-borodinski {
+	margin-left: 45px;
+}
+
+.logo-pink::after {
+	right: -55px;
+}
+
+.logo {
+	position: relative;
+}
+
+.logo::after {
+	position: absolute;
+	content: "";
+	background-color: var(--light-grey);
+	height: 52px;
+	width: 2px;
 }
 
 .position {
 	position: relative;
+	padding: 54px 0;
+	margin-bottom: 68px;
 }
 
 .map {
-	width: 100%;
-	max-width: 100%;
 	position: absolute;
 	border: none;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 0;
 }
 
 .map-marker {
@@ -521,10 +533,11 @@ a {
   background-color: var(--white);
   box-sizing: border-box;
   padding: 49px 50px 47px 50px;
-  position: absolute;
-	top: 54px;
 	left: 50%;
 	transform: translateX(-580px);
+	position: relative;
+	z-index: 2;
+	width: 319px;
 }
 
 .inglish-name {
@@ -569,11 +582,15 @@ a {
 	line-height: 36px;
 	color: var(--black);
 	font-weight: 700;
+	margin: 0;
+	margin-bottom: 10px;
+	padding-top: 7px;
 }
 
 .sale {
 	line-height: 22px;
 	color: var(--grey-grey);
+	margin: 0;
 }
 
 .friend-sale {
@@ -589,6 +606,7 @@ a {
 	margin-right: 139px;
 	align-items: center;
 	align-self: end;
+	padding-left: 20px;
 }
 
 .social-button {
