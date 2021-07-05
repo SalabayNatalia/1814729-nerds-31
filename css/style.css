@@ -515,6 +515,10 @@ a {
 	width: 2px;
 }
 
+.main-footer {
+	margin-bottom: 68px;
+}
+
 .position {
 	position: relative;
 	padding: 54px 0;
