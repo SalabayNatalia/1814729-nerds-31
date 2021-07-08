@@ -700,13 +700,13 @@ a {
 .range-filter {
 	width: 260px;
 	margin-top: 49px;
-	margin-bottom: 54px;
+	margin-bottom: 55px;
 }
 
 .range-controls {
 	position: relative;
 	height: 41px;
-	margin-bottom: 15px;
+	margin-bottom: 13px;
 	background-color: var(--light-grey);
 	border-radius: 5px;
 	padding-right: 20px;
@@ -748,21 +748,19 @@ a {
 
 .price-controls {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-between; */ 
 }
 
 .price-controls label {
 	text-transform: uppercase;
-	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
+	text-align: center;
 }
 
 .price-controls input {
-	font-family: inherit;
-	font-size: inherit;
 	width: 60px;
 	padding: 10px;
-	margin-left: 10px;
+	margin-left: 12px;
 	text-align: center;
 	color: var(--dark-grey);
 	border: none;
@@ -783,6 +781,10 @@ a {
 	position: relative;
 }
 
+.check {
+	padding-left: 40px;
+}
+
 .radio-input {
 	position: absolute;
 	width: 1px;
@@ -800,13 +802,15 @@ a {
 	border: 4px solid var(--grey);
 	opacity: 0.4;
 	margin-bottom: 17px;
+	margin-left: -35px;
 }
 
 .radio:hover {
 	opacity: 1;
 }
 
-.radio-input:checked + .radio {
+.radio-input:checked + .radio::after {
+	content: "";
 	position: absolute;
 	width: 2px;
 	height: 2px;
@@ -816,6 +820,7 @@ a {
 	top: 7px;
 	left: 7px;
 }
+/* не получается добавить этот круг в состоянии checked. Как сделать, не используя background-image? */
 
 .radio-input:hover + .radio {
 	opacity: 1;
@@ -855,8 +860,9 @@ a {
 	background-color: var(--white);
 	background-image: url(../img/check-box.svg);
 	background-repeat: no-repeat;
-	margin-bottom: 17px;
+	margin-bottom: 18px;
 	opacity: 0.4;
+	margin-left: -35px;
 }
 
 .check-box:hover {
@@ -878,7 +884,6 @@ a {
 }
 
 .check-input:checked:hover + .check-box {
-	/* background-image: url(../img/checked.svg); */
 	opacity: 1;
 }
 
@@ -887,7 +892,6 @@ a {
 }
 
 .check-input:checked:disabled + .check-box {
-	background-image: url(../img/checked.svg);
 	opacity: 0.1;
 }
 
@@ -900,7 +904,7 @@ a {
 }
 
 .filter-radio {
-	margin-bottom: 13px;
+	margin-bottom: 16px;
 }
 
 .button-grey {
@@ -940,8 +944,6 @@ a {
 
 .sorting-flex {
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
 	padding-top: 5px;
 	margin-right: 20px;
 }
@@ -996,7 +998,7 @@ a {
 }
 
 .arrow-down:active {
-	border-top: 10px solid var(--grey-arrows-active);
+	border-top-color:  var(--grey-arrows-active);
 }
 
 .arrow-here {
@@ -1013,7 +1015,7 @@ a {
 }
 
 .arrow-up:active {
-	border-bottom: 10px solid var(--grey-arrows-active);
+	border-bottom-color:  var(--grey-arrows-active);
 }
 
 .arrow {
@@ -1034,50 +1036,34 @@ a {
 	grid-column-end: -1;
 	grid-row-start: 2;
 	grid-row-end: 3;
-	margin-bottom: 50px;
+	margin-bottom: 47px;
 }
 
-.rectangle {
+.product::before {
+	content: "";
+	background-image: url(../img/circles.svg);
 	width: 359px;
 	height: 40px;
 	background-color: var(--grey);
-	opacity: 0.12;
-	margin: 0;
 	border-radius: 5px 5px 0 0;
-}
-
-.circle {
-	width: 13px;
-	height: 13px;
-	border-radius: 50%;
-	background-color: var(--white);
-	border: 1px solid var(--grey);
-}
-
-.product-designe {
-	position: relative;
-}
-
-.circle-trio {
-	display: flex;
-	justify-content: flex-start;
-	margin-left: 15px;
+	opacity: 0.12;
 	position: absolute;
-	z-index: 2;
-	top: 13px;
-}
-
-.circle:not(:last-child) {
-	margin-right: 9px;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: left 16px top 13px;
 }
 
 .product {
 	position: relative;
+	padding-top: 40px;
+}
+
+.product::before:hover {
+	opacity: 1;
 }
 
 .product-name {
-	margin: 0;
-	padding: 0;
 	margin-top: 25px;
 	margin-bottom: 10px;
 	line-height: 30px;
@@ -1110,7 +1096,6 @@ a {
 .price-card-background {
 	background-color: var(--light-grey);
 	width: 359px;
-	height: 233px;
 	text-align: center;
 	position: absolute;
 	display: none;
@@ -1118,17 +1103,11 @@ a {
 	border-radius: 0 0 5px 5px;
 }
 
-.price-card-flex {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
 .product:hover .price-card-background {
 	display: block;
 }
 
-.product:hover .rectangle {
+.product:hover::before {
 	opacity: 1;
 }
 
@@ -1151,7 +1130,6 @@ a {
 
 .pages-numbers {
 	display: flex;
-	justify-content: flex-start;
 }
 
 .button-pages-numbers {
@@ -1164,7 +1142,7 @@ a {
 	line-height: 18px;
 	font-weight: 500;
 	padding: 17px 20px 15px 20px;
-	margin-right: 11px;
+	margin-right: 12px;
 }
 
 .button-pages-numbers:active {

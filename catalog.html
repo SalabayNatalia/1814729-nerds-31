@@ -50,8 +50,8 @@
 										<div class="toggle toggle-max" tabindex="0"></div>
 									</div>
 									<div class="price-controls">
-										<label class="min-price">от<input type="number" name="min-price" value="0"></label>
-										<label class="max-price">до<input type="number" name="max-price" value="150 000"></label>
+										<label class="min-price">от<input type="text" name="min-price" value="0"></label>
+										<label class="max-price">до<input type="text" name="max-price" value="150 000"></label>
 									</div>
 								</div>
 							</fieldset>
@@ -59,19 +59,22 @@
 								<legend class="filter filter-radio">Сетка:</legend>
 								<ul class="clear-list filter-list">
 									<li class="grid-item">
-										<input class="radio-input" type="radio" name="network" value="adaptive" id="filter-Adaptive" checked>
+										<!-- <input class="radio-input" type="radio" name="network" value="adaptive" id="filter-Adaptive" checked>
 										<span class="radio"></span>
-										<label class="options check" for="filter-Adaptive">Адаптивная</label>
+										<label class="options check" for="filter-Adaptive">Адаптивная</label> -->
+										<label class="options check"><input class="radio-input" type="checkbox" checked><span class="radio"></span>Адаптивная</label>
 									</li>
 									<li class="grid-item">
-										<input class="radio-input" type="radio" name="network" value="fixed" id="filter-fixed">
+										<!-- <input class="radio-input" type="radio" name="network" value="fixed" id="filter-fixed">
 										<span class="radio"></span>
-										<label class="options check" for="filter-fixed">Фиксированная</label>
+										<label class="options check" for="filter-fixed">Фиксированная</label> -->
+										<label class="options check"><input class="radio-input" type="checkbox"><span class="radio"></span>Фиксированная</label>
 									</li>
 									<li class="grid-item">
-										<input class="radio-input" type="radio" name="network" value="rubber" id="filter-rubber">
+										<!-- <input class="radio-input" type="radio" name="network" value="rubber" id="filter-rubber">
 										<span class="radio"></span>
-										<label class="options check" for="filter-rubber">Резиновая</label>
+										<label class="options check" for="filter-rubber">Резиновая</label> -->
+										<label class="options check"><input class="radio-input" type="checkbox"><span class="radio"></span>Резиновая</label>
 									</li>
 								</ul>
 							</fieldset>
@@ -79,29 +82,34 @@
 								<legend class="filter filter-check">Особенности:</legend>
 								<ul class="clear-list filter-list">
 									<li>
-										<input class="check-input" type="checkbox" name="slider" id="Slider" checked>
+										<!-- <input class="check-input" type="checkbox" name="slider" id="Slider" checked>
 										<span class="check-box"></span>
-										<label class="options check" for="Slider">Слайдер</label>
+										<label class="options check" for="Slider">Слайдер</label> -->
+										<label class="options check"><input class="check-input" type="checkbox" checked><span class="check-box"></span>Слайдер</label>
 									</li>
 									<li>
-										<input class="check-input" type="checkbox" name="block of advantages" id="filter-block of advantages">
+										<!-- <input class="check-input" type="checkbox" name="block of advantages" id="filter-block of advantages">
 										<span class="check-box"></span>
-										<label class="options check" for="filter-block of advantages">Блок преимуществ</label>
+										<label class="options check" for="filter-block of advantages">Блок преимуществ</label> -->
+										<label class="options check"><input class="check-input" type="checkbox"><span class="check-box"></span>Блок преимуществ</label>
 									</li>
 									<li>
-										<input class="check-input" type="checkbox" name="news" id="filter-news" checked>
+										<!-- <input class="check-input" type="checkbox" name="news" id="filter-news" checked>
 										<span class="check-box"></span>
-										<label class="options check" for="filter-news">Новости</label>
+										<label class="options check" for="filter-news">Новости</label> -->
+										<label class="options check"><input class="check-input" type="checkbox" checked><span class="check-box"></span>Новости</label>
 									</li>
 									<li>
-										<input class="check-input" type="checkbox" name="gallery" id="filter-gallery">
+										<!-- <input class="check-input" type="checkbox" name="gallery" id="filter-gallery">
 										<span class="check-box"></span>
-										<label class="options check" for="filter-gallery">Галерея</label>
+										<label class="options check" for="filter-gallery">Галерея</label> -->
+										<label class="options check"><input class="check-input" type="checkbox"><span class="check-box"></span>Галерея</label>
 									</li>
 									<li>
-										<input class="check-input" type="checkbox" name="basket" id="filter-basket">
+										<!-- <input class="check-input" type="checkbox" name="basket" id="filter-basket">
 										<span class="check-box"></span>
-										<label class="options check" for="filter-basket">Корзина</label>
+										<label class="options check" for="filter-basket">Корзина</label> -->
+										<label class="options check"><input class="check-input" type="checkbox"><span class="check-box"></span>Корзина</label>
 									</li>
 								</ul>
 							</fieldset>
@@ -135,32 +143,16 @@
 					<section class="products">
 						<ul class="clear-list product-cards">
 							<li class="product">
-								<div class="rectangle product-designe">
-									<ul class="circle-trio clear-list">
-										<li class="circle"></li>
-										<li class="circle"></li>
-										<li class="circle"></li>
-									</ul>
-								</div>
 								<div class="price-card-background">
-									<div class="price-card-flex">
-										<h3 class="product-name">
-									<a class="sample-sites" href="#">Sedona</a>
+									<h3 class="product-name">
+										<a class="sample-sites" href="#">Sedona</a>
 									</h3>
 									<p class="sample-sites-text">Информационный сайт<br>для туристов</p>
 									<button class="button button-price" type="button">9 900 <span>&#8381;</span></button>
-									</div>
 								</div>
 								<img src="img/sedona.jpg" width="359" height="578" alt="Sedona-информационный сайт для туристов">
 							</li>
 							<li class="product">
-								<div class="rectangle product-designe">
-									<ul class="circle-trio clear-list">
-										<li class="circle"></li>
-										<li class="circle"></li>
-										<li class="circle"></li>
-									</ul>
-								</div>
 								<div class="price-card-background">
 									<div class="price-card-flex">
 										<h3 class="product-name">
@@ -173,13 +165,6 @@
 								<img src="img/pink.jpg" width="358" height="578" alt="Pink app-продуктовый лендинг приложения для IOS и Android">
 							</li>
 							<li class="product">
-								<div class="rectangle product-designe">
-									<ul class="circle-trio clear-list">
-										<li class="circle"></li>
-										<li class="circle"></li>
-										<li class="circle"></li>
-									</ul>
-								</div>
 								<div class="price-card-background">
 									<div class="price-card-flex">
 								<h3 class="product-name">
@@ -192,13 +177,6 @@
 								<img src="img/barbershop.jpg" width="358" height="578" alt="barbershop borodinski-сайт салона красоты для мужчин">
 							</li>
 							<li class="product">
-								<div class="rectangle product-designe">
-									<ul class="circle-trio clear-list">
-										<li class="circle"></li>
-										<li class="circle"></li>
-										<li class="circle"></li>
-									</ul>
-								</div>
 								<div class="price-card-background">
 									<div class="price-card-flex">
 								<h3 class="product-name">
@@ -211,13 +189,6 @@
 								<img src="img/mishka.jpg" width="359" height="578" alt="mishka-интернет-магазин вязаных игрушек">
 							</li>
 							<li class="product">
-								<div class="rectangle product-designe">
-									<ul class="circle-trio clear-list">
-										<li class="circle"></li>
-										<li class="circle"></li>
-										<li class="circle"></li>
-									</ul>
-								</div>
 								<div class="price-card-background">
 									<div class="price-card-flex">
 								<h3 class="product-name">
@@ -230,13 +201,6 @@
 								<img src="img/aplus.jpg" width="359" height="578" alt="a plus-лендинг курсов повышения квалификации">
 							</li>
 							<li class="product">
-								<div class="rectangle product-designe">
-									<ul class="circle-trio clear-list">
-										<li class="circle"></li>
-										<li class="circle"></li>
-										<li class="circle"></li>
-									</ul>
-								</div>
 								<div class="price-card-background">
 									<div class="price-card-flex">
 								<h3 class="product-name">
