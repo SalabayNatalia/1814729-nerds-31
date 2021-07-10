@@ -43,6 +43,7 @@
 	--toggle-grey: #ABABAB;
 	--grey-arrows: #A6A6A6;
 	--grey-arrows-active: #231F20;
+	--grey-modal: #B4B9BB
 }
 
 .page {
@@ -1160,4 +1161,136 @@ a {
 	background-color: var(--white);
 	border: 3px solid var(--grey-one);
 	padding: 14px 17px 12px 17px;
+}
+
+.modal {
+	position: fixed;
+	left: 240px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 5;
+	color: var(--black);
+	background-color: var(--white);
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+	padding: 63px 100px 105px;
+	width: 960px;
+	height: 590px;
+	box-sizing: border-box;
+	/* display: none; */
+}
+
+.modal-form {
+	/* outline: 2px solid var(--green); */
+}
+
+.modal-heading {
+	margin: 0;
+	margin-bottom: 37px;
+	font-size: 45px;
+	line-height: 53px;
+	/* outline: 1px solid var(--dark-green); */
+}
+
+.modal-boxes {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.discription-box {
+	display: flex;
+	flex-direction: column;
+	/* outline: 1px solid var(--red); */
+	margin: 0;
+}
+
+.discription {
+	display: block;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	margin-bottom: 9px;
+}
+
+.box {
+	border: 2px solid var(--range-grey);
+	background-color: var(--white);
+	border-radius: 3px;
+	margin-bottom: 34px;
+}
+
+.box:hover {
+	border-color: var(--grey-modal)
+}
+
+.box:active {
+	border-color: var(--black);
+	color: var(--black);
+}
+
+.box:invalid {
+	border-color: var(--red);
+	color: var(--red);
+}
+
+.your-name {
+	padding: 14px 14px 13px 14px;
+	 width: 327px;
+}
+
+.email {
+	padding: 14px 14px 13px 16px;
+	width: 327px;
+}
+
+.letter {
+	padding: 16px 14px 62px 15px;
+	width: 726px;	
+}
+
+.modal-button {
+	padding: 16px 83px 16px 84px;
+	margin-top: 13px;
+}
+
+.modal-close {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	background-color: var(--white);
+	width: 30px;
+	height: 30px;
+	border: none;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content:"";
+	position: absolute;
+	top: 86px;
+	left: 845px;
+	width: 28px;
+	height: 4px;
+	background-color: var(--light-red);
+	opacity: 0.3;
+}
+
+.modal-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-close::after {
+	transform: rotate(-45deg);
+}
+
+.modal-close:hover::after,
+.modal-close:hover::before {
+	opacity: 1;
+}
+
+.modal-close:active::after,
+.modal-close:active::before {
+	opacity: 0.1;
 }
