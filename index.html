@@ -16,7 +16,7 @@
 				<nav class="main-navigation">
 					<div class="main-navigation-wrapper">
 						<a href="index.html" class="main-header-logo">
-							<img src="img/nerds-logo.svg" width="159,87" height="65" alt="логотип студии nёrds">
+							<img src="img/nerds-logo.svg" width="160" height="65" alt="логотип студии nёrds">
 						</a>
 						<ul class="clear-list site-navigation">
 							<li><a href="#">студия</a></li>
@@ -32,17 +32,17 @@
 				<h1 class="visually-hidden">Студия nёrds</h1>
 				<section class="slider">
 					<ul class="slider-list clear-list">
-						<li class="slider-item slide-three-phones slide slide-current">
+						<li class="slide-three-phones slide slide-current">
 							<h2 class="slogan slide-title">Долго, дорого,<br>скрупулезно.</h2>
 							<p class="text text-slogan">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
 							<a class="button button-info slide-button" href="blank.html">узнать больше</a>
 						</li>
-						<li class="slider-item slide-two-screens slide">
+						<li class="slide-two-screens slide">
 							<h2 class="slogan slide-title">Любим математику<br>как никто другой.</h2>
 							<p class="text text-slogan">Никакого креатива, только математические формулы<br>для расчёта идеальных пропорций</p>
 							<a class="button button-info slide-button" href="blank.html">узнать больше</a>
 						</li>
-						<li class="slider-item slide-tablet-phone slide">
+						<li class="slide-tablet-phone slide">
 							<h2 class="slogan slide-title">Только ночь, <br>только хардкор.</h2>
 							<p class="text text-slogan">Работать днём, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
 							<a class="button button-info slide-button" href="blank.html">узнать больше</a>
@@ -117,7 +117,7 @@
 					<h3 class="visually-hidden">Клиенты</h3>
 					<ul class="clear-list clients">
 						<li class="logo logo-html">
-							<a class="client-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlacademy.svg" width="" height="" alt="логотип сайта htmlacademy"></a>
+							<a class="client-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlacademy.svg" width="199" height="57" alt="логотип сайта htmlacademy"></a>
 						</li>
 						<li class="logo logo-borodinski">
 							<a class="client-logo" href="#"><img src="img/logo-borodinski.png" width="209" height="90" alt="логотип барбершопа Бородински"></a>
@@ -135,7 +135,7 @@
 		<footer class="main-footer">
 			<section class="position">
 				<h2 class="visually-hidden">контакты</h2>
-				<img class="map" src="img/map.png" height="416"alt="карта">
+				<img class="map" src="img/map.png" height="416" alt="карта">
 				<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="маркер карты">
 				<section class="adress-phone">
 					<h3 class="inglish-name">nёrds design studio</h3>
@@ -179,5 +179,26 @@
 				</ul>
 			</div>
 		</footer>
+		<section class="modal">
+			<h2 class="modal-heading">Напишите нам</h2>
+			<form action="https//echo.htmlacadeny.ru" method="post">
+				<div class="modal-boxes">
+					<p class="description-box">
+						<label class="description" for="your-name">Ваше имя:</label>
+						<input class="field-text your-name name-email" id="your-name" type="text" placeholder="Имя Фамилия">
+					</p>
+					<p class="description-box">
+						<label class="description" for="email">Ваш email:</label>
+						<input class="field-text email name-email" id="email" type="email" placeholder="email@example.com">
+					</p>
+					<p class="description-box">
+						<label class="description" for="letter">Текст письма:</label>
+						<textarea class="field-text letter" id="letter" name="text" placeholder="В свободной форме"></textarea>
+					</p>
+				</div>
+				<button class="button modal-button" type="submit">Отправить</button>
+			</form>
+			<button class="modal-close" type="button" aria-label="Закрыть"></button>
+		</section>
 	</body>
 </html>
