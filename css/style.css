@@ -750,7 +750,7 @@ a {
 
 .price-controls {
 	display: flex;
-	justify-content: space-between; */ 
+	justify-content: space-between;
 }
 
 .price-controls label {
@@ -1066,7 +1066,7 @@ a {
 	margin-bottom: 10px;
 	line-height: 30px;
 	font-size: 18px;
-	font-style: 700;
+	font-weight: 700;
 }
 
 .sample-sites {
@@ -1167,12 +1167,12 @@ a {
 	position: fixed;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%, -50%);
+	transform: translate(-50%, -50%);
 	z-index: 5;
 	color: var(--black);
 	background-color: var(--white);
 	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-	padding: 63px 100px 105px;
+	padding: 63px 100px 84px;
 	width: 960px;
 	box-sizing: border-box;
 	display: none;
@@ -1192,7 +1192,8 @@ a {
 }
 
 .description-box {
-	margin-bottom: 9px;
+	margin-top: 0;
+	margin-bottom: 35px;
 }
 
 .description {
@@ -1200,13 +1201,13 @@ a {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 18px;
+	margin-bottom: 9px;
 }
 
 .field-text {
 	border: 2px solid var(--range-grey);
 	background-color: var(--white);
 	border-radius: 3px;
-	margin-bottom: 34px;
 }
 
 .field-text:hover {
@@ -1240,12 +1241,12 @@ a {
 
 .letter {
 	padding: 16px 14px 62px 15px;
-	width: 726px;	
+	width: 727px;	
 }
 
 .modal-button {
 	padding: 16px 83px 16px 84px;
-	margin-top: 13px;
+	margin-top: 7px;
 }
 
 .modal-close {
